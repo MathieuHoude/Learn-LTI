@@ -372,7 +372,7 @@
                 "tenantId": "[variables('tenantId')]",
                 "accessPolicies": [
                     {
-                        "objectId": "[parameters('userObjectId')]",
+                        "ObjectId": "[parameters('userObjectId')]",
                         "tenantId": "[variables('tenantId')]",
                         "permissions": {
                             "keys": [
