@@ -422,21 +422,21 @@
                 "accessPolicies": [
                     {
                         "tenantId": "[variables('tenantId')]",
-                        "objectId": "[reference(resourceId('Microsoft.Web/sites',concat('connect' , variables('ProjectNameSuffix'))), '2019-08-01', 'Full').identity.principalId]",
+                        "ObjectId": "[reference(resourceId('Microsoft.Web/sites',concat('connect' , variables('ProjectNameSuffix'))), '2019-08-01', 'Full').identity.principalId]",
                         "permissions": {
                             "keys": "[variables('KVKeyPermissions')]"
                         }
                     },
                     {
                         "tenantId": "[variables('tenantId')]",
-                        "objectId": "[reference(resourceId('Microsoft.Web/sites',concat('users' , variables('ProjectNameSuffix'))), '2019-08-01', 'Full').identity.principalId]",
+                        "ObjectId": "[reference(resourceId('Microsoft.Web/sites',concat('users' , variables('ProjectNameSuffix'))), '2019-08-01', 'Full').identity.principalId]",
                         "permissions": {
                             "keys": "[variables('KVKeyPermissions')]"
                         }
                     },
                     {
                         "tenantId": "[variables('tenantId')]",
-                        "objectId": "[reference(resourceId('Microsoft.Web/sites',concat('platforms' , variables('ProjectNameSuffix'))), '2019-08-01', 'Full').identity.principalId]",
+                        "ObjectId": "[reference(resourceId('Microsoft.Web/sites',concat('platforms' , variables('ProjectNameSuffix'))), '2019-08-01', 'Full').identity.principalId]",
                         "permissions": {
                             "keys": "[variables('KVKeyPermissions')]"
                         }
